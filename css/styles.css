@@ -19,6 +19,54 @@ body {
     background-color: var(--second-text-color);
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.header {
+    padding: 24px 0;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.container {
+    display: flex;
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {}
+
 .header-logo.link {
     margin-right: 76px;
     color: var(--logo-color);
@@ -34,22 +82,11 @@ body {
     color: var(--main-text-color);
 }
 
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-
-p, h1,h2, h3, h4, h5, h6 {
-    margin: 0;
-}
-
-img {
-    display: block;
+.header-logo.link,
+.header-logo.span {
+    display: flex;
+    justify-content: center;
+    margin-right: 76px;
 }
 
 .link {
@@ -68,27 +105,7 @@ img {
     color: var(--btn-color);
 }
 
-.header {
-    padding: 24px 0;
-    border-bottom: 1px solid #e7e9fc;
-}
-
-.header-inner{
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-nav {
-    display: flex;
-    align-items: center;
-}
-
-.header-logo.link,
-.header-logo.span {
-    display: flex;
-    justify-content: center;
-    margin-right: 76px;
-}
+.span {}
 
 .nav-menu {
     display: flex;
@@ -99,24 +116,26 @@ img {
     padding: 24px 0;
 }
 
+.header-socials {}
+
 .header-address {
     display: flex;
     gap: 40px;
     font-style: normal;
 }
 
-.address-link {
-    display: flex;
-    gap: 40px;
-}
-
-.header-address.link {
+.header-address.list {
     color: var(--body-text-color);
     font-style: normal;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.address-link {
+    display: flex;
+    gap: 40px;
 }
 
 .header-address.link:hover {
@@ -185,6 +204,102 @@ img {
     background-color: var(--btn-color);
 }
 
+.section-inform {
+    padding: 120px 0;
+    display: flex;
+    color: var(--main-text-color);
+    background-color: var(--second-text-color);
+}
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+.section-menu {
+    display: flex;
+    gap: 24px;
+}
+
+.section-item {
+    gap: 24px;
+    justify-content: center;
+}
+
+.section-subtitle {
+    margin-bottom: 8px;
+    background-color: var(--second-text-color);
+    color: var(--main-text-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.section-item-text {
+    background-color: var(--second-text-color);
+    color: var(--body-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.section-team {
+    display: flex;
+    padding: 120px 0;
+    gap: 24px;
+    background-color: var(--dialog-color);
+    color: var(--main-text-color);
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.section-title {
+    margin-bottom: 72px;
+    color: var(--main-text-color);
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.team-list {
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--second-text-color);
+}
+
+.team-employees {
+    padding: 32px 0;
+}
+
+.section-our-portfolio {
+    padding: 120px 0;
+    flex-wrap: wrap;
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+}
+
+.section-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.section-img {
+    display: flex;
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-apps {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
 .subtitle-item {
     width: calc((100% - 72px) / 4);
     margin-bottom: 8px;
@@ -202,124 +317,12 @@ img {
     letter-spacing: 0.02em;
 }
 
-.section {
-    padding: 120px 0;
-    display: flex;
-}
-
-.container {
-    display: flex;
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.section-inform {
-    padding: 120px 0;
-    display: flex;
-    color: var(--main-text-color);
-    background-color: var(--second-text-color);
-}
-
-.visually-hidden {
-    visibility: hidden;
-}
-
-.inform.list {
-    list-style: none;
-}
-
-.section-menu {
-    display: flex;
-    gap: 24px;
-}
-
-.section-img {
-    display: flex;
-    width: calc((100% - 48px) / 3);
-}
-
-.section-subtitle {
-    margin-bottom: 8px;
-    background-color: var(--second-text-color);
-    color: var(--main-text-color);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-align: center;
-}
-
-.section-item {
-    gap: 24px;
-    justify-content: center;
-}
-
-.section-item-text {
-    background-color: var(--second-text-color);
-    color: var(--body-text-color);
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: center;
-}
-
-.section-title {
-    margin-bottom: 72px;
-    color: var(--main-text-color);
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-}
-
-.section-team {
-    display: flex;
-    padding: 120px 0;
-    gap: 24px;
-    background-color: var(--dialog-color);
-    color: var(--main-text-color);
-    font-size: 36px;
-    line-height: 1.1;
-    text-align: center;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-
-.team-list {
-    border-radius: 0px 0px 4px 4px;
-    background-color: var(--second-text-color);
-}
-
-.section-portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
-}
-
-.team-employees{
-    padding: 32px 0;
-}
-
-.section-our-portfolio {
-    padding: 120px 0;
-    flex-wrap: wrap;
-    border: 1px solid var(--CORNFLOWER, #E7E9FC);
-}
-
-.portfolio-apps {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
-}
-
 .footer {
     background-color: var(--main-text-color);
     padding: 100px 0;
 }
 
-.footer-logo.link {
+.footer-logo-link {
     color: var(--logo-color);
     font-size: 18px;
     font-family: "Raleway", sans-serif;
