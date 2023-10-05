@@ -44,13 +44,13 @@ img {
 }
 
 .header {
+    text-decoration: none;
     padding: 24px 0;
     border-bottom: 1px solid #e7e9fc;
 }
 
 .container {
     display: flex;
-    max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -225,6 +225,7 @@ img {
 }
 
 .section-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
     gap: 24px;
     justify-content: center;
 }
@@ -326,7 +327,7 @@ img {
     padding: 100px 0;
 }
 
-.footer-logo-link {
+.footer-logo.link {
     color: var(--logo-color);
     font-size: 18px;
     font-family: "Raleway", sans-serif;
