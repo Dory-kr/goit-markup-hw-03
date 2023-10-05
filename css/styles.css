@@ -116,6 +116,10 @@ img {
     padding: 24px 0;
 }
 
+.inform.list {
+    list-style: none;
+}
+
 .header-socials {}
 
 .header-address {
